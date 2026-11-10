@@ -21,3 +21,7 @@ body { font-family: var(--font-texte), system-ui, sans-serif; overflow-x: hidden
   background: linear-gradient(transparent 55%, rgb(194 69 45 / 0.28) 55%, rgb(194 69 45 / 0.28) 92%, transparent 92%);
   padding: 0 0.1em;
 }
+
+.texte-legal h2 { font-family: var(--font-fraunces); font-weight: 600; font-size: 1.25rem; margin-top: 2rem; }
+.texte-legal a { text-decoration: underline; text-underline-offset: 3px; }
+.a-remplir { background: #FFE7A3; padding: 0 0.25em; font-weight: 600; }
