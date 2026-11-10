@@ -84,7 +84,7 @@ export default function Accueil() {
 
         <div className="sticky bottom-0 -mx-5 mt-auto bg-papier/95 px-5 pb-5 pt-6 backdrop-blur-sm">
           <a
-            href="#"
+            href="/diagnostic"
             className="block w-full rounded-md bg-sapin py-4 text-center text-lg font-semibold text-papier active:translate-y-px"
           >
             Commencer — c’est gratuit
