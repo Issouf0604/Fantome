@@ -1,26 +1,23 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-papier: #F6F1E7;
+  --color-papier-fonce: #ECE4D3;
+  --color-encre: #1B1A17;
+  --color-gris: #6B655B;
+  --color-brique: #C2452D;
+  --color-sapin: #1F4D3A;
+  --font-titre: var(--font-fraunces);
+  --font-texte: var(--font-instrument);
+  --font-chiffre: var(--font-plex-mono);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+html { background: var(--color-papier); color: var(--color-encre); -webkit-text-size-adjust: 100%; }
+body { font-family: var(--font-texte), system-ui, sans-serif; overflow-x: hidden; }
+.chiffres { font-family: var(--font-chiffre), ui-monospace, monospace; font-variant-numeric: tabular-nums; }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Surlignage « feutre » des fantômes */
+.feutre {
+  background: linear-gradient(transparent 55%, rgb(194 69 45 / 0.28) 55%, rgb(194 69 45 / 0.28) 92%, transparent 92%);
+  padding: 0 0.1em;
 }
